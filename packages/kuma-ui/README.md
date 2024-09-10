@@ -1,6 +1,6 @@
 # Next.js App
 
-[Next.js 14](https://nextjs.org/) (App Router) application with [Tailwind CSS](https://tailwindcss.com/)
+[Next.js 14](https://nextjs.org/) (App Router) application with [Kuma-UI](https://www.kuma-ui.com/docs)
 
 ## Getting Started
 

@@ -1,5 +1,6 @@
 import path from 'node:path'
 
+import KumaUI from '@kuma-ui/vite'
 import type { StorybookConfig } from '@storybook/react-vite'
 import react from '@vitejs/plugin-react-swc'
 import { mergeConfig } from 'vite'
@@ -22,7 +23,7 @@ const config: StorybookConfig = {
     },
     viteFinal: (config) => {
         return mergeConfig(config, {
-            plugins: [react()],
+            plugins: [react(), KumaUI()],
             resolve: {
                 alias: {
                     '@repo/react': path.resolve(__dirname, '../../../packages/react/src'),
