@@ -3,9 +3,10 @@
     "display": "Default",
     "compilerOptions": {
         "paths": {
-            "@repo/next/*": ["../../packages/next/src/*"],
-            "@repo/react/*": ["../../packages/react/src/*"],
-            "@repo/react-chrome/*": ["../../packages/react-chrome/src/*"],
+            "@repo/vanilla-extract/*": ["../../packages/vanilla-extract/src/*"],
+            "@repo/kuma-ui/*": ["../../packages/kuma-ui/src/*"],
+            "@repo/panda-css/*": ["../../packages/panda-css/src/*"],
+            "@repo/linaria/*": ["../../packages/linaria/src/*"],
             "@repo/ui/*": ["../../packages/ui/src/*"]
         },
         "module": "ESNext",
