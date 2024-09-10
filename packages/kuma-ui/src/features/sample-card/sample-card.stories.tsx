@@ -1,3 +1,4 @@
+import { KumaRegistry } from '@kuma-ui/next-plugin/registry'
 import type { Meta, StoryFn, StoryObj } from '@storybook/react'
 
 import { SampleCard } from './sample-card'
@@ -5,10 +6,14 @@ import { SampleCard } from './sample-card'
 type SampleCardType = typeof SampleCard
 
 export default {
-    title: 'Next/SampleCard',
+    title: 'Kuma/SampleCard',
     component: SampleCard,
     render: (props) => <SampleCard {...props} />,
-    decorators: (Story: StoryFn) => <Story />
+    decorators: (Story: StoryFn) => (
+        <KumaRegistry>
+            <Story />
+        </KumaRegistry>
+    )
 } satisfies Meta<SampleCardType>
 
 export const Default: StoryObj<SampleCardType> = {

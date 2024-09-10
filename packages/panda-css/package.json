@@ -8,6 +8,7 @@
         "dev": "next dev",
         "prebuild": "rm -rf .next/",
         "build": "next build",
+        "storybook": "storybook dev -p 6008",
         "lint": "biome lint .",
         "lint:fix": "biome lint . --write",
         "test": "vitest run",
@@ -28,6 +29,16 @@
         "@next/bundle-analyzer": "^14.2.8",
         "@pandacss/dev": "^0.46.0",
         "@repo/tailwind": "workspace:*",
-        "@repo/typescript": "workspace:*"
+        "@repo/typescript": "workspace:*",
+        "@chromatic-com/storybook": "^1.8.0",
+        "@storybook/addon-a11y": "^8.2.9",
+        "@storybook/addon-console": "^3.0.0",
+        "@storybook/addon-essentials": "^8.2.9",
+        "@storybook/addon-interactions": "^8.2.9",
+        "@storybook/addon-links": "^8.2.9",
+        "@storybook/addon-storysource": "^8.2.9",
+        "@storybook/react-vite": "^8.2.9",
+        "@whitespace/storybook-addon-html": "^6.1.1",
+        "storybook": "^8.2.9"
     }
 }

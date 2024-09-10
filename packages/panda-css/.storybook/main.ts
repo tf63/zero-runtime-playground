@@ -1,12 +1,11 @@
 import path from 'node:path'
 
-import KumaUI from '@kuma-ui/vite'
 import type { StorybookConfig } from '@storybook/react-vite'
 import react from '@vitejs/plugin-react-swc'
 import { mergeConfig } from 'vite'
 
 const config: StorybookConfig = {
-    stories: ['../../../packages/*/src/**/*.stories.*', '../../../packages/*/src/**/*.mdx'],
+    stories: ['../../../packages/panda-css/src/**/*.stories.*', '../../../packages/panda-css/src/**/*.mdx'],
     addons: [
         '@chromatic-com/storybook',
         '@storybook/addon-essentials',
@@ -23,12 +22,12 @@ const config: StorybookConfig = {
     },
     viteFinal: (config) => {
         return mergeConfig(config, {
-            plugins: [react(), KumaUI()],
+            plugins: [react()],
             resolve: {
                 alias: {
-                    '@repo/react': path.resolve(__dirname, '../../../packages/react/src'),
-                    '@repo/react-chrome': path.resolve(__dirname, '../../../packages/react-chrome/src'),
-                    '@repo/next': path.resolve(__dirname, '../../../packages/next/src'),
+                    '@repo/kuma-ui': path.resolve(__dirname, '../../../packages/kuma-ui/src'),
+                    '@repo/panda-css': path.resolve(__dirname, '../../../packages/panda-css/src'),
+                    '@repo/vanilla-extract': path.resolve(__dirname, '../../../packages/vanilla-extract/src'),
                     '@repo/ui': path.resolve(__dirname, '../../../packages/ui/src')
                 }
             }
