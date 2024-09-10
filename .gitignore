@@ -3,6 +3,9 @@
 # kuma-ui
 .kuma/
 
+# panda CSS
+styled-system/
+
 # dependencies
 node_modules/
 .yarn/
@@ -70,3 +73,7 @@ test-results/
 blob-report/
 playwright-report/
 playwright/.cache/
+
+## Panda
+styled-system
+styled-system-studio
